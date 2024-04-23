@@ -54,9 +54,3 @@ class Slide extends StatelessWidget {
     );
   }
 }
-
-void main() {
-  runApp(MaterialApp(
-    home: TutorialIntegracao(),
-  ));
-}
