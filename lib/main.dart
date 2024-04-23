@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:madventure/pages/integracao.dart';
 import 'package:madventure/pages/splashPage.dart';
 
 void main() {
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TutorialIntegracao(),
+      home: SplashPage(),
     );
   }
   
