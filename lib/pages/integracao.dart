@@ -44,6 +44,38 @@ class _TutorialIntegracaoState extends State<TutorialIntegracao> {
             ],
           ),
           Positioned(
+            right: 150,
+            bottom: 16,
+            child: ElevatedButton(
+              onPressed: () {
+                _pageController.animateToPage(
+                  _currentPageIndex.toInt()+1,
+                   duration: Duration(milliseconds: 100),
+                    curve: Curves.ease);
+                
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.transparent, 
+                foregroundColor: Colors.black, 
+              ),
+              child: Text('Pular'),
+            ),
+          ),
+
+          Positioned(
+            right:30,
+            bottom: 16,
+            child: ElevatedButton(
+              onPressed: (){}, 
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black, 
+                  foregroundColor: Colors.white
+                ),
+              child: Text('Próximo')
+            ),
+          ),
+
+          Positioned(
             left: 16.0,
             bottom: 16.0,
             child: DotsIndicator(
